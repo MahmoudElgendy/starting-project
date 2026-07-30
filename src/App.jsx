@@ -1,24 +1,7 @@
 import ReactImage from "./assets/react-core-concepts.png";
 import ComponentsImage from "./assets/components.png";
-const reactDescriptions = ["Fundamentals", "Crusial", "Core"];
 import { CORE_CONCEPTS } from "./data.js";
-function GetRandonInt(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
-function Header() {
-  const description =
-    reactDescriptions[GetRandonInt(reactDescriptions.length - 1)];
-  return (
-    <header>
-      <img src={ReactImage} alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
-        {description} React concepts you will need for almost any app you are
-        going to build!
-      </p>
-    </header>
-  );
-}
+import Header from "./components/Header.jsx";
 
 // destructor instead of props
 // property names must match the object keys
