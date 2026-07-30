@@ -1,7 +1,7 @@
 import ReactImage from "./assets/react-core-concepts.png";
 import ComponentsImage from "./assets/components.png";
 import { CORE_CONCEPTS } from "./data.js";
-import Header from "./components/Header.jsx";
+import Header from "./components/Header/Header.jsx";
 
 // destructor instead of props
 // property names must match the object keys
