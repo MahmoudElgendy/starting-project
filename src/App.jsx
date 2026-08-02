@@ -2,6 +2,7 @@ import ReactImage from "./assets/react-core-concepts.png";
 import ComponentsImage from "./assets/components.png";
 import { CORE_CONCEPTS } from "./data.js";
 import Header from "./components/Header/Header.jsx";
+import TabButton from "./components/TabButton.jsx";
 
 // destructor instead of props
 // property names must match the object keys
@@ -49,7 +50,15 @@ function App() {
             ))}
           </ul>
         </section>
-        <h2>Time to get started!</h2>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton>Components </TabButton>
+            <TabButton>JSX </TabButton>
+            <TabButton>Props </TabButton>
+            <TabButton>State</TabButton>
+          </menu>
+        </section>
       </main>
     </div>
   );
